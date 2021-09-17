@@ -22,7 +22,7 @@ let g:indent_tab_8w_filetypes = get(g:, 'indent_tab_8w_filetypes', [])
 let g:indent_space_2w_filetypes= get(g:, 'indent_space_2w_filetypes', [])
 
 " filetypes that use 4 space as indent char
-let g:indent_space_4w_filetypes = get(g:, 'indent_4_space_filetypes', [])
+let g:indent_space_4w_filetypes = get(g:, 'indent_space_4w_filetypes', [])
 
 set autoindent
 set smartindent
