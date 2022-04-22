@@ -44,11 +44,15 @@ function! s:set_files_indent(filetype_list, mode, width)
     return
   endif
 
+  let l:i = 0
   let l:file_types_str = ""
   for lang in a:filetype_list
-    " echom lang
-    let l:file_types_str= l:file_types_str. "," . lang
-    " echom l:file_types_str
+    if l:i == 0
+      let l:file_types_str = lang
+    else
+      let l:file_types_str = l:file_types_str. "," . lang
+    endif
+    let l:i = l:i + 1
   endfor
 
   " a:mode, 0: 空格, !0: Tab
